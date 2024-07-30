@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "datax-ppa",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
