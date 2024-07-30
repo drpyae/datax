@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Pyae Phyo Aung</title>
+    <title>Contact - Pyae Phyo Aung</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -31,22 +31,35 @@
                         <a class="nav-link" href="dashboard.html">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Landing Section -->
-    <header class="header bg-light text-dark py-5">
-        <div class="container text-center">
-            <h1>Welcome to My Data Science Portfolio</h1>
-            <p>Explore my data science projects, professional portfolio, and get in touch.</p>
-            <a href="project.html" class="btn btn-primary">View Project</a>
-            <a href="portfolio.html" class="btn btn-secondary">My Portfolio</a>
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or would like to connect, feel free to reach out through the contact form below or via email.</p>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
         </div>
-    </header>
+    </section>
 
     <!-- Footer -->
     <footer class="footer bg-dark text-white text-center py-3">
@@ -70,8 +83,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-analytics.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
